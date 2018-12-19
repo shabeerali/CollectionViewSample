@@ -12,28 +12,41 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewID" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="ColllectionViewSample" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="165" height="130"/>
+            <rect key="frame" x="0.0" y="0.0" width="130" height="196"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="165" height="130"/>
+                <rect key="frame" x="0.0" y="0.0" width="130" height="196"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FcP-tL-7DP">
-                        <rect key="frame" x="0.0" y="0.0" width="165" height="130"/>
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="196"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="NlC-yc-wiO">
+                        <rect key="frame" x="33" y="66" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="MmM-kg-5j5"/>
+                            <constraint firstAttribute="width" constant="65" id="XaH-NJ-gYr"/>
+                        </constraints>
                     </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="FcP-tL-7DP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0Bc-H4-gz8"/>
-                <constraint firstAttribute="trailing" secondItem="FcP-tL-7DP" secondAttribute="trailing" id="0DJ-Cu-vW0"/>
-                <constraint firstAttribute="bottom" secondItem="FcP-tL-7DP" secondAttribute="bottom" id="Lez-Cj-YYI"/>
-                <constraint firstItem="FcP-tL-7DP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wEY-lg-foz"/>
+                <constraint firstItem="FcP-tL-7DP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1ja-pH-K8q"/>
+                <constraint firstItem="FcP-tL-7DP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2o3-iL-QDj"/>
+                <constraint firstAttribute="trailing" secondItem="FcP-tL-7DP" secondAttribute="trailing" id="BZ8-89-kgV"/>
+                <constraint firstItem="NlC-yc-wiO" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NAt-qc-rcW"/>
+                <constraint firstAttribute="bottom" secondItem="FcP-tL-7DP" secondAttribute="bottom" id="UqA-rh-yFe"/>
+                <constraint firstItem="NlC-yc-wiO" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="qCU-Sd-t3Q"/>
             </constraints>
-            <size key="customSize" width="165" height="130"/>
+            <size key="customSize" width="135" height="195"/>
             <connections>
+                <outlet property="avatarImageView" destination="NlC-yc-wiO" id="A4F-5q-cKe"/>
                 <outlet property="imageView" destination="FcP-tL-7DP" id="K25-ZX-RAU"/>
             </connections>
-            <point key="canvasLocation" x="91.5" y="94"/>
+            <point key="canvasLocation" x="76" y="56"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="avatar.png" width="65" height="65"/>
+    </resources>
 </document>
