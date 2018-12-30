@@ -9,10 +9,14 @@
 import UIKit
 
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class HomeVODViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     
     @IBOutlet weak var tableView : UITableView!
+    
+   
+    
+    
     var onDemanVideos = [OnDemandVideo]()
     
       let onDemanVideoUrls : [String] =  ["https://i.pinimg.com/170x/80/6e/86/806e86fa05945243d29f33531134b6da.jpg",
@@ -60,6 +64,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         // Do any additional setup after loading the view, typically from a nib.
         self.createOnDemandVideos()
         self.tableView.register(UINib(nibName: "VideoCollectionViewContainerTableViewCell", bundle: nil), forCellReuseIdentifier: "VideoCollectionContainerCell")
+        
+    
+
         //self.tableView.register(VideoCollectionViewContainerTableViewCell.self, forCellReuseIdentifier: "VideoCollectionContainerCell")
     }
     
@@ -98,7 +105,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             cell.labelCategory.text = "Popular"
             cell.vods = onDemanVideos
             
-        }else if(indexPath.row == 1){
+        }
+        else if(indexPath.row == 1){
             
             cell.labelCategory.text = "Trending"
             cell.vods = onDemanVideos
@@ -119,6 +127,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             cell.vods = onDemanVideos
             
         }
+ 
         
         
        

@@ -2,20 +2,24 @@ PODS:
   - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
+  - RAMAnimatedTabBarController (2.2.3)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
+  - RAMAnimatedTabBarController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - RAMAnimatedTabBarController
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  RAMAnimatedTabBarController: 71adaa59ea22a8badfa242b8e068f0b9ebbb447d
 
-PODFILE CHECKSUM: e406a3bd71826f69aa0ea3bb68ad82075edb7655
+PODFILE CHECKSUM: 325be12278ae817eb3d6010dcd6afe7cd0e5099a
 
 COCOAPODS: 1.5.3

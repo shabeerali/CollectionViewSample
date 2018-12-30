@@ -6,7 +6,9 @@ target 'ColllectionViewSample' do
   use_frameworks!
 
   # Pods for ColllectionViewSample
-  pod 'Alamofire'
-pod 'AlamofireImage'
+   
+    pod 'Alamofire'
+    pod 'AlamofireImage'
+    pod 'RAMAnimatedTabBarController'
 
 end

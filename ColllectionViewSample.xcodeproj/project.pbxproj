@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C06938121C958E1009E0EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06938021C958E1009E0EF2 /* AppDelegate.swift */; };
-		5C06938321C958E1009E0EF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06938221C958E1009E0EF2 /* ViewController.swift */; };
+		5C06938321C958E1009E0EF2 /* HomeVODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06938221C958E1009E0EF2 /* HomeVODViewController.swift */; };
 		5C06938621C958E1009E0EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C06938421C958E1009E0EF2 /* Main.storyboard */; };
 		5C06938821C958E1009E0EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C06938721C958E1009E0EF2 /* Assets.xcassets */; };
 		5C06938B21C958E1009E0EF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C06938921C958E1009E0EF2 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,8 @@
 		5C06939E21C97D9C009E0EF2 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06939D21C97D9C009E0EF2 /* UIColorExtensions.swift */; };
 		5CCCD4C521CAB0A400A74043 /* OnDemandVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCD4C421CAB0A400A74043 /* OnDemandVideo.swift */; };
 		5CCCD4C721CAB5C600A74043 /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CCCD4C621CAB5C600A74043 /* avatar@2x.png */; };
+		5CD7EC3921D921AF0009733D /* CustomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7EC3721D921AF0009733D /* CustomFooterView.swift */; };
+		5CD7EC3A21D921AF0009733D /* CustomFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CD7EC3821D921AF0009733D /* CustomFooterView.xib */; };
 		9E1F414624750F9B66A22BC6 /* Pods_ColllectionViewSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE6A5CDEFA6A20980DE58F5 /* Pods_ColllectionViewSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +31,7 @@
 		20012DDDC88CF8DA8F5D8507 /* Pods-ColllectionViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColllectionViewSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColllectionViewSample/Pods-ColllectionViewSample.debug.xcconfig"; sourceTree = "<group>"; };
 		5C06937D21C958E1009E0EF2 /* ColllectionViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColllectionViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C06938021C958E1009E0EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C06938221C958E1009E0EF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C06938221C958E1009E0EF2 /* HomeVODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVODViewController.swift; sourceTree = "<group>"; };
 		5C06938521C958E1009E0EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C06938721C958E1009E0EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C06938A21C958E1009E0EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		5C06939D21C97D9C009E0EF2 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		5CCCD4C421CAB0A400A74043 /* OnDemandVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnDemandVideo.swift; sourceTree = "<group>"; };
 		5CCCD4C621CAB5C600A74043 /* avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@2x.png"; sourceTree = "<group>"; };
+		5CD7EC3721D921AF0009733D /* CustomFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFooterView.swift; sourceTree = "<group>"; };
+		5CD7EC3821D921AF0009733D /* CustomFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomFooterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,7 @@
 				5CCCD4C621CAB5C600A74043 /* avatar@2x.png */,
 				5C06939221C96924009E0EF2 /* CustomCells */,
 				5C06938021C958E1009E0EF2 /* AppDelegate.swift */,
-				5C06938221C958E1009E0EF2 /* ViewController.swift */,
+				5C06938221C958E1009E0EF2 /* HomeVODViewController.swift */,
 				5C06938421C958E1009E0EF2 /* Main.storyboard */,
 				5C06938721C958E1009E0EF2 /* Assets.xcassets */,
 				5C06938921C958E1009E0EF2 /* LaunchScreen.storyboard */,
@@ -110,6 +114,8 @@
 		5C06939221C96924009E0EF2 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				5CD7EC3721D921AF0009733D /* CustomFooterView.swift */,
+				5CD7EC3821D921AF0009733D /* CustomFooterView.xib */,
 				5C06939D21C97D9C009E0EF2 /* UIColorExtensions.swift */,
 				5C06939721C9795A009E0EF2 /* CenterViewFlowLayout.swift */,
 				5C06939321C969F4009E0EF2 /* VideoCollectionViewContainerTableViewCell.swift */,
@@ -182,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD7EC3A21D921AF0009733D /* CustomFooterView.xib in Resources */,
 				5C06938B21C958E1009E0EF2 /* LaunchScreen.storyboard in Resources */,
 				5C06938821C958E1009E0EF2 /* Assets.xcassets in Resources */,
 				5C06939621C969F4009E0EF2 /* VideoCollectionViewContainerTableViewCell.xib in Resources */,
@@ -199,19 +206,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ColllectionViewSample/Pods-ColllectionViewSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -223,15 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ColllectionViewSample-checkManifestLockResult.txt",
 			);
@@ -248,11 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C06939B21C97D23009E0EF2 /* CollectionViewCell.swift in Sources */,
-				5C06938321C958E1009E0EF2 /* ViewController.swift in Sources */,
+				5C06938321C958E1009E0EF2 /* HomeVODViewController.swift in Sources */,
 				5CCCD4C521CAB0A400A74043 /* OnDemandVideo.swift in Sources */,
 				5C06939521C969F4009E0EF2 /* VideoCollectionViewContainerTableViewCell.swift in Sources */,
 				5C06939E21C97D9C009E0EF2 /* UIColorExtensions.swift in Sources */,
 				5C06938121C958E1009E0EF2 /* AppDelegate.swift in Sources */,
+				5CD7EC3921D921AF0009733D /* CustomFooterView.swift in Sources */,
 				5C06939821C9795A009E0EF2 /* CenterViewFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
