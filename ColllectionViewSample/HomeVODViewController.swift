@@ -64,6 +64,7 @@ class HomeVODViewController: UIViewController,UITableViewDelegate,UITableViewDat
         // Do any additional setup after loading the view, typically from a nib.
         self.createOnDemandVideos()
         self.tableView.register(UINib(nibName: "VideoCollectionViewContainerTableViewCell", bundle: nil), forCellReuseIdentifier: "VideoCollectionContainerCell")
+        self.tableView.register(UINib(nibName: "VODCategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "VODCategoryTableViewCell")
         
     
 
@@ -91,50 +92,47 @@ class HomeVODViewController: UIViewController,UITableViewDelegate,UITableViewDat
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 5;
+        return 3;
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCollectionContainerCell", for: indexPath) as! VideoCollectionViewContainerTableViewCell
-        
-        
         if(indexPath.row == 0){
-            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCollectionContainerCell", for: indexPath) as! VideoCollectionViewContainerTableViewCell
             cell.labelCategory.text = "Popular"
             cell.vods = onDemanVideos
             
+           return cell
         }
-        else if(indexPath.row == 1){
+        else {
             
+            let cell = tableView.dequeueReusableCell(withIdentifier: "VODCategoryTableViewCell", for: indexPath) as! VODCategoryTableViewCell
+            
+            if(indexPath.row == 1){
+            
+          
+           
             cell.labelCategory.text = "Trending"
-            cell.vods = onDemanVideos
             
-        }else if(indexPath.row == 2){
+            let image = UIImage(named: "category_1.png")
+            cell.vodCategoryImageVIew.image = image
+            }else if(indexPath.row == 2)
+            {
+                cell.labelCategory.text = "Trending"
+                
+                let image = UIImage(named: "category_7.png")
+                cell.vodCategoryImageVIew.image = image
+            }
             
-            cell.labelCategory.text = "Movies"
-            cell.vods = onDemanVideos
-            
-        }else if(indexPath.row == 3){
-            
-            cell.labelCategory.text = "Sports"
-            cell.vods = onDemanVideos
         
-        }else if(indexPath.row == 4){
-            
-            cell.labelCategory.text = "Recent"
-            cell.vods = onDemanVideos
+            return cell
             
         }
- 
-        
-        
-       
-        
                 
-        return cell
+       return UITableViewCell()
     }
-
 }
+
+
 
