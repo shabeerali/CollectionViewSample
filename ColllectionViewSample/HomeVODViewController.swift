@@ -14,7 +14,9 @@ class HomeVODViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     @IBOutlet weak var tableView : UITableView!
     
-   
+    var categoryArray : [String] = ["New Shows", "Kids", "News", "Movies","Trailers","Discovery","Geography"]
+    
+     var categoryImageArray : [String] = ["category_1.png","category_2.png","category_3.png","category_4.png","category_5.png","category_6.png","category_7.png"]
     
     
     var onDemanVideos = [OnDemandVideo]()
@@ -92,7 +94,7 @@ class HomeVODViewController: UIViewController,UITableViewDelegate,UITableViewDat
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 3;
+        return 2;
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -114,23 +116,14 @@ class HomeVODViewController: UIViewController,UITableViewDelegate,UITableViewDat
           
            
             cell.labelCategory.text = "Trending"
+            cell.categoryArray = self.categoryArray
+            cell.categoryImageArray = self.categoryImageArray
             
-            let image = UIImage(named: "category_1.png")
-            cell.vodCategoryImageVIew.image = image
-            }else if(indexPath.row == 2)
-            {
-                cell.labelCategory.text = "Trending"
-                
-                let image = UIImage(named: "category_7.png")
-                cell.vodCategoryImageVIew.image = image
-            }
-            
-        
             return cell
             
+            }
         }
-                
-       return UITableViewCell()
+        return UITableViewCell()
     }
 }
 
